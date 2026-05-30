@@ -1,0 +1,22 @@
+body{
+    background-color: cornsilk;
+}
+h1{
+    color:cadetblue;
+    text-align: center;
+}
+form{
+    background-color: rgb(28, 166, 190);
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+}
+input, label, option, select{
+    margin-bottom: 15px;
+    display: block;
+}
+legend{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}

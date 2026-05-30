@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <h1>Forms exmple</h1>
+    <form method="POST" action="https://submit-form.com/TjllbuUWY">
+        <fieldset>
+            <legend>Nombre y Edad</legend>
+            <div>
+                <label for="mi_nombre">Inserte nombre</label>
+                <input id="mi_nombre" type="text" name="nombre" autofocus placeholder="Ponga su nombre completo"
+                    required autocomplete="name">
+            </div>
+            <div>
+                <label for="Edad">Edad</label>
+                <input type="number" name="Edad" id="Edad" placeholder="Ej:17" min="1" max="110">
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" required autocomplete="bday" min="1910-01-01" max="2025-12-31">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Más información personal</legend>
+            <div>
+                <input type="radio" name="genero" value="femenino"> Femenino
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="otro"> Otro
+            </div>
+            <div>
+                <label for="pais">País</label>
+                <select id="pais" name="pais" required autocomplete="country">
+                    <option value="">Seleccione un país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+            </div>
+            <div>
+                <label for="ciudad">Ciudad de residencia</label>
+
+                <input list="ciudades" id="ciudad" name="ciudad">
+
+                <datalist id="ciudades">
+                    <option value="Buenos Aires">
+                    <option value="Córdoba">
+                    <option value="Rosario">
+                    <option value="Mendoza">
+                    <option value="La Plata">
+                </datalist>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Pasatiempos</legend>
+            <div>
+                <label>Intereses:</label>
+
+                <input type="checkbox" id="musica" name="intereses" value="musica">
+                <label for="musica">Música</label>
+
+                <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                <label for="deportes">Deportes</label>
+
+                <input type="checkbox" id="lectura" name="intereses" value="lectura">
+                <label for="lectura">Lectura</label>
+
+                <input type="checkbox" id="cocina" name="Intereses" value="cocina">
+                <label for="cocina">Cocina</label>
+
+                <input type="checkbox" id="otro" name="Intereses" value="otro">
+                <label for="otro">Otro</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Usuario</legend>
+            <div>
+                <label for="usuario">Nombre usuario</label>
+                <input type="text" name="Nombre usuario" id="Usuario" pattern="[A-Za-z0-9]{5,12}" required minlength="5" maxlength="12">
+                    placeholder="Entre 5 a 12 letras/números">
+            </div>
+            <div>
+                <label for="email">Tu email</label>
+                <input id="email" type="email" name="Correo" placeholder="Ej: tu-correo@gmail.com" required
+                    autocomplete="email">
+            </div>
+            <div>
+                <label for="Tu contraseña">Tu clave</label>
+                <input type="password" id="Constraseña" name="Clave" required minlength="5"
+                    placeholder="Minimo 5 carcateteres" autocomplete="new-password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Presentación</legend>
+            <div>
+                <label for="Biografia">Biografía</label>
+                <textarea id="Biografia" rows="20" cols="40" placeholder="Ecribe una pequeña presentación..." requiered></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar infromación">
+    </form>
+</body>
+
+</html>
