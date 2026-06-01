@@ -10,103 +10,156 @@
 </head>
 
 <body>
-    <h1>Forms exmple</h1>
+    <img src="banner.jpg" alt="Banner" class="banner">
+    <h1>-Musikfy-</h1>
+    <div class="bienvenida">
+        <p>Bienvenido a Musikfy! Completa este formulario para registrate oficialemnte e iniciar en la experiencia de
+            Musikfy!</p>
+    </div>
+    <img src="minicono-removebg-preview.png" alt="imagen1" class="img1">
+    <img src="minicono2-removebg-preview.png" alt="imagen2" class="img2">
+    <img src="gato-removebg-preview.png" alt="imagen3" class="img3">
+    <img src="guitarra-removebg-preview.png" alt="iamgen4" class="img4">
     <form method="POST" action="https://submit-form.com/TjllbuUWY">
-        <fieldset>
-            <legend>Nombre y Edad</legend>
-            <div>
-                <label for="mi_nombre">Inserte nombre</label>
-                <input id="mi_nombre" type="text" name="nombre" autofocus placeholder="Ponga su nombre completo"
-                    required autocomplete="name">
-            </div>
-            <div>
-                <label for="Edad">Edad</label>
-                <input type="number" name="Edad" id="Edad" placeholder="Ej:17" min="1" max="110">
-            </div>
-            <div>
-                <label for="fecha">Fecha de nacimiento:</label>
-                <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" required autocomplete="bday" min="1910-01-01" max="2025-12-31">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Más información personal</legend>
-            <div>
-                <input type="radio" name="genero" value="femenino"> Femenino
-                <input type="radio" name="genero" value="masculino"> Masculino
-                <input type="radio" name="genero" value="otro"> Otro
-            </div>
-            <div>
-                <label for="pais">País</label>
-                <select id="pais" name="pais" required autocomplete="country">
-                    <option value="">Seleccione un país</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Brasil">Brasil</option>
-                </select>
-            </div>
-            <div>
-                <label for="ciudad">Ciudad de residencia</label>
+        <section>
+            <h2>Formulario de ingreso</h2>
+            <fieldset>
+                <legend>👤Nombre y Edad</legend>
+                <div>
+                    <label for="mi_nombre">Inserte nombre</label>
+                    <input id="mi_nombre" type="text" name="nombre" autofocus placeholder="Ponga su nombre completo"
+                        required autocomplete="name">
+                </div>
+                <div>
+                    <label for="Edad">Edad</label>
+                    <input type="number" name="Edad" id="Edad" placeholder="Ej:17" min="1" max="110">
+                </div>
+                <div>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" required autocomplete="bday"
+                        min="1910-01-01" max="2025-12-31">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>📑Más información personal</legend>
+                <div>
+                    <input type="radio" name="genero" value="femenino"> <label>Femenino</label>
+                    <input type="radio" name="genero" value="masculino"> <label>Masculino</label>
+                    <input type="radio" name="genero" value="otro"> <label>Otro</label>
+                </div>
+                <div>
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required autocomplete="country">
+                        <option value="">Seleccione un país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Brasil">Brasil</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ciudad">Ciudad de residencia</label>
 
-                <input list="ciudades" id="ciudad" name="ciudad">
+                    <input list="ciudades" id="ciudad" name="ciudad">
 
-                <datalist id="ciudades">
-                    <option value="Buenos Aires">
-                    <option value="Córdoba">
-                    <option value="Rosario">
-                    <option value="Mendoza">
-                    <option value="La Plata">
-                </datalist>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Pasatiempos</legend>
-            <div>
-                <label>Intereses:</label>
+                    <datalist id="ciudades">
+                        <option value="Buenos Aires">
+                        <option value="Córdoba">
+                        <option value="Rosario">
+                        <option value="Mendoza">
+                        <option value="La Plata">
+                    </datalist>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>🎵Generos de música</legend>
+                <label>Favoritos:</label>
+                <div class="intereses">
+                    <label for="pop">Pop</label>
+                    <input type="checkbox" id="pop" name="intereses" value="pop">
 
-                <input type="checkbox" id="musica" name="intereses" value="musica">
-                <label for="musica">Música</label>
+                    <label for="r&b">R&B</label>
+                    <input type="checkbox" id="r&b" name="intereses" value="r&b">
 
-                <input type="checkbox" id="deportes" name="intereses" value="deportes">
-                <label for="deportes">Deportes</label>
+                    <label for="rock">Rock</label>
+                    <input type="checkbox" id="rock" name="intereses" value="rock">
 
-                <input type="checkbox" id="lectura" name="intereses" value="lectura">
-                <label for="lectura">Lectura</label>
+                    <label for="indie">Indie</label>
+                    <input type="checkbox" id="indie" name="intereses" value="indie">
 
-                <input type="checkbox" id="cocina" name="Intereses" value="cocina">
-                <label for="cocina">Cocina</label>
-
-                <input type="checkbox" id="otro" name="Intereses" value="otro">
-                <label for="otro">Otro</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Usuario</legend>
-            <div>
-                <label for="usuario">Nombre usuario</label>
-                <input type="text" name="Nombre usuario" id="Usuario" pattern="[A-Za-z0-9]{5,12}" required minlength="5" maxlength="12">
-                    placeholder="Entre 5 a 12 letras/números">
-            </div>
-            <div>
-                <label for="email">Tu email</label>
-                <input id="email" type="email" name="Correo" placeholder="Ej: tu-correo@gmail.com" required
-                    autocomplete="email">
-            </div>
-            <div>
-                <label for="Tu contraseña">Tu clave</label>
-                <input type="password" id="Constraseña" name="Clave" required minlength="5"
-                    placeholder="Minimo 5 carcateteres" autocomplete="new-password">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Presentación</legend>
-            <div>
-                <label for="Biografia">Biografía</label>
-                <textarea id="Biografia" rows="20" cols="40" placeholder="Ecribe una pequeña presentación..." requiered></textarea>
-            </div>
-        </fieldset>
-        <input type="submit" value="Enviar infromación">
+                    <label for="otro">Otro</label>
+                    <input type="checkbox" id="otro" name="intereses" value="otro">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>🫆Usuario</legend>
+                <div>
+                    <label for="usuario">Nombre usuario</label>
+                    <input type="text" name="Nombre usuario" id="Usuario" pattern="[A-Za-z0-9]{5,12}" required
+                        minlength="5" maxlength="12" placeholder="Entre 5 a 12 letras/números">
+                </div>
+                <div>
+                    <label for="email">Tu email</label>
+                    <input id="email" type="email" name="Correo" placeholder="Ej: tu-correo@gmail.com" required
+                        autocomplete="email">
+                </div>
+                <div>
+                    <label for="Tu contraseña">Tu clave</label>
+                    <input type="password" id="Constraseña" name="Clave" required minlength="5"
+                        placeholder="Minimo 5 carcateteres" autocomplete="new-password">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>📝Presentación</legend>
+                <div>
+                    <label for="Biografia">Biografía</label>
+                    <textarea id="Biografia" name="Biografia" rows="20" cols="40"
+                        placeholder="Ecribe una pequeña presentación..." requiered></textarea>
+                </div>
+            </fieldset>
+            <input type="submit" name="button" value="Enviar infromación">
     </form>
+    </section>
+    <section>
+        <p class="mensaje">¿Necesitas soprte tecnico? Completa este formulario!</p>
+        <form method="POST" action="https://submit-form.com/TjllbuUWY">
+            <h2>Formulario de contacto</h2>
+            <fieldset>
+                <legend>👥Identificación</legend>
+                <label for="mi_nombre">Inserte nombre</label>
+                <input id="mi_nombre" name="nombre" type="text" required autocomplete="name" autofocus
+                    placeholder="Ponga su nombre">
+                <label for="email">Tu email</label>
+                <input id="email" name="Correo" required autocomplete="email" placeholder="Ej: tu-correo@gmail.com">
+            </fieldset>
+            <fieldset>
+                <legend>💻Razón de contacto</legend>
+                <label for="motivo">Motivo de contacto</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccione un motivo</option>
+                    <option value="Cuenta anterior">Ya tengo una cuenta</option>
+                    <option value="Contraseña olvidada">Olvide mi contraseña</option>
+                    <option value="Aparicón de datos">No aparecen mis resumenes musicales</option>
+                    <option value="Sincronización">No puedo sincronizar mi app de musica</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <label for="mensaje">Mensaje detallado</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>📋​Terminos y condiciones</legend>
+                <div class="tyc">
+                    <label>Acepto los terminos y condiciones</label>
+                    <input type="checkbox" required id="tyc" name="tyc">
+                </div>
+            </fieldset>
+            <input type="submit" name="button" value="Enviar infromación">
+        </form>
+    </section>
 </body>
+<footer>
+    <p>Gracias por completar nuestro formulario!🎶</p>
+</footer>
+<img src="footer.jpg" alt="banner.inferior" class="banner-inferior">
 
 </html>

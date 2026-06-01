@@ -1,22 +1,143 @@
-body{
+body {
     background-color: cornsilk;
 }
-h1{
-    color:cadetblue;
+
+h1 {
+    color: cadetblue;
     text-align: center;
+    font-size: 60px;
+}
+h2{
+color:rgb(255, 247, 172)
 }
 form{
-    background-color: rgb(28, 166, 190);
+    background-color: rgb(12, 136, 158);
     padding: 15px;
     width: 50%;
     margin: auto;
+    border-radius: 20px;
 }
-input, label, option, select{
+
+input,
+label,
+option,
+select,
+textarea {
     margin-bottom: 15px;
     display: block;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 20px;
 }
-legend{
+
+legend {
     display: block;
     margin-bottom: 15px;
     text-align: center;
+    color: bisque;
+    font-weight: bold;
+}
+
+label {
+    color: antiquewhite;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+input:hover,
+select:hover {
+    transform: scale(1.02);
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+fieldset{
+    padding: 20px;
+}
+.intereses, .tyc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+p{
+    margin:auto;
+    display: block;
+    color: rgb(41, 19, 5);
+}
+.banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+.banner-inferior {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+.bienvenida, p[class="mensaje"]{
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+
+    border: 2px solid rgb(121, 13, 13);
+    border-radius: 10px;
+
+    text-align: center;
+
+    background-color: rgba(255, 241, 115, 0.5);
+}
+.img1 {
+    position: absolute;
+    top: 450px;
+    left: 80px;
+    width: 90px;
+}
+
+.img2 {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    width: 90px;
+}
+.img4 {
+    position: absolute;
+    top: 400px;
+    right: 70px;
+    width: 140px;
+}
+
+.img3 {
+    position: absolute;
+    top: 480px;
+    right: 20px;
+    width: 100px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+
+    margin-top: 30px;
+
+    background-color: rgba(255,255,255,0.2);
+
+     width: 50%;
+    margin: 20px auto;
+
+    border: 2px solid rgb(121, 13, 13);
+    border-radius: 10px;
+
+    background-color: rgba(255, 241, 115, 0.5);
 }
