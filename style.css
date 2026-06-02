@@ -17,9 +17,15 @@ form{
     margin: auto;
     border-radius: 20px;
 }
-
+label{
+    display: block;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
 input,
-label,
 option,
 select,
 textarea {
@@ -28,6 +34,8 @@ textarea {
     transition: 0.3s;
     padding: 10px;
     border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 legend {
